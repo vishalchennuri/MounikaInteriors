@@ -25,7 +25,7 @@ const TestimonialsSection = () => {
     <section id="testimonials" className="py-20 bg-monica-cream">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <h2 className="text-center text-3xl md:text-4xl font-serif mb-4">Voices Of Trust</h2>
+          <h2 className="text-center text-3xl md:text-4xl font-serif mb-4 uppercase">Voices Of Trust</h2>
         </ScrollReveal>
         <ScrollReveal delay={100}>
           <p className="text-center text-gray-600 mb-12">Don't just take our word for it—here's what our clients say</p>

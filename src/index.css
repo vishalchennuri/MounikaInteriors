@@ -100,7 +100,7 @@
   }
 
   .btn-monica {
-    @apply px-6 py-3 bg-monica text-white border border-monica hover:bg-transparent hover:text-monica transition-all duration-300;
+    @apply px-6 py-3 bg-monica text-white border border-monica hover:bg-transparent hover:text-monica transition-all duration-300 uppercase;
   }
 
   .btn-outline-monica {

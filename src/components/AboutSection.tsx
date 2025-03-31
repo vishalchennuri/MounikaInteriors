@@ -7,7 +7,7 @@ const AboutSection = () => {
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <h2 className="text-3xl md:text-4xl font-serif mb-3">Why Thoughtful Design Matters</h2>
+          <h2 className="text-3xl md:text-4xl font-serif mb-3 uppercase">Why Thoughtful Design Matters</h2>
         </ScrollReveal>
         <ScrollReveal delay={100}>
           <p className="text-lg text-gray-600 mb-12">Our philosophy of creating spaces that nurture and inspire</p>
@@ -29,7 +29,7 @@ const AboutSection = () => {
           </ScrollReveal>
           
           <ScrollReveal delay={400} className="lg:col-span-1">
-            <div className="relative h-full overflow-hidden rounded-sm">
+            <div className="relative h-full min-h-[400px] overflow-hidden rounded-sm">
               <img
                 src="https://images.unsplash.com/photo-1616137422495-1e9e46e2aa77?q=80&w=1974&auto=format&fit=crop"
                 alt="Thoughtful Design Process"

@@ -16,7 +16,7 @@ const WhyUsSection = () => {
     <section id="why-us" className="py-20 bg-monica">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <h2 className="text-white text-3xl md:text-4xl font-serif mb-3">Why Choose Us?</h2>
+          <h2 className="text-white text-3xl md:text-4xl font-serif mb-3 uppercase">Why Choose Us?</h2>
         </ScrollReveal>
         <ScrollReveal delay={100}>
           <p className="text-white/80 text-lg mb-12">What sets Monica Interiors apart from the rest</p>
