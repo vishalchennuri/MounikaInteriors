@@ -8,7 +8,7 @@ const HeroSection = () => {
       id="home"
       className="relative h-screen bg-cover bg-center flex items-center"
       style={{
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2074&auto=format&fit=crop")',
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=1900&auto=format&fit=crop")',
       }}
     >
       <div className="container mx-auto px-4 lg:px-20">
