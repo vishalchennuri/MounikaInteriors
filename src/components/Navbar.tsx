@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
@@ -26,26 +25,35 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
-        <a 
-          href="#" 
-          className="text-mounika text-xl font-serif font-medium hover-lift"
+        <a
+          href="#"
+          className={cn(
+            "text-xl font-serif font-medium hover-lift transition-colors duration-300",
+            isScrolled ? "text-black" : "text-white"
+          )}
         >
           MOUNIKA<br />INTERIORS
         </a>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
-          <a href="#home" className="text-mounika hover:text-mounika/70 elegant-underline">Home</a>
-          <a href="#about" className="text-mounika hover:text-mounika/70 elegant-underline">About</a>
-          <a href="#expertise" className="text-mounika hover:text-mounika/70 elegant-underline">Expertise</a>
-          <a href="#projects" className="text-mounika hover:text-mounika/70 elegant-underline">Projects</a>
-          <a href="#shop" className="text-mounika hover:text-mounika/70 elegant-underline">Shop</a>
-          <a href="#contact" className="text-mounika hover:text-mounika/70 elegant-underline">Contact</a>
+          {["Home", "About", "Expertise", "Projects", "Shop", "Contact"].map((item) => (
+            <a
+              key={item}
+              href={`#${item.toLowerCase()}`}
+              className={cn(
+                "hover:opacity-80 transition-colors duration-300",
+                isScrolled ? "text-black" : "text-white"
+              )}
+            >
+              {item}
+            </a>
+          ))}
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-mounika"
+          className={cn("lg:hidden transition-colors duration-300", isScrolled ? "text-black" : "text-white")}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -54,50 +62,18 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 animate-fade-in">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-black bg-opacity-90 py-4 animate-fade-in">
           <div className="container mx-auto px-4 flex flex-col space-y-4">
-            <a 
-              href="#home" 
-              className="text-mounika py-2 hover:text-mounika/70"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Home
-            </a>
-            <a 
-              href="#about" 
-              className="text-mounika py-2 hover:text-mounika/70"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              About
-            </a>
-            <a 
-              href="#expertise" 
-              className="text-mounika py-2 hover:text-mounika/70"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Expertise
-            </a>
-            <a 
-              href="#projects" 
-              className="text-mounika py-2 hover:text-mounika/70"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Projects
-            </a>
-            <a 
-              href="#shop" 
-              className="text-mounika py-2 hover:text-mounika/70"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Shop
-            </a>
-            <a 
-              href="#contact" 
-              className="text-mounika py-2 hover:text-mounika/70"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Contact
-            </a>
+            {["Home", "About", "Expertise", "Projects", "Shop", "Contact"].map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className="text-white py-2 hover:opacity-80"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item}
+              </a>
+            ))}
           </div>
         </div>
       )}
