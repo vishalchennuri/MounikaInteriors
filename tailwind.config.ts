@@ -63,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				monica: {
+				mounika: {
 					DEFAULT: '#1a1a1a',
 					light: '#f5f5f5',
 					cream: '#f8f5f0',
