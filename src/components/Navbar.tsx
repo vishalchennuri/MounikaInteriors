@@ -22,25 +22,27 @@ const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        isScrolled ? "bg-white shadow-md py-3" : "bg-transparent py-6"
+        isScrolled 
+          ? "bg-white/95 backdrop-blur-sm shadow-sm py-3" 
+          : "bg-white/80 backdrop-blur-sm py-5"
       )}
     >
       <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
         <a 
           href="#" 
-          className="text-mounika text-xl font-serif font-medium hover-lift"
+          className="text-mounika text-xl font-serif font-medium hover-lift tracking-wide"
         >
           MOUNIKA<br />INTERIORS
         </a>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
-          <a href="#home" className="text-mounika hover:text-mounika/70 elegant-underline">Home</a>
-          <a href="#about" className="text-mounika hover:text-mounika/70 elegant-underline">About</a>
-          <a href="#expertise" className="text-mounika hover:text-mounika/70 elegant-underline">Expertise</a>
-          <a href="#projects" className="text-mounika hover:text-mounika/70 elegant-underline">Projects</a>
-          <a href="#shop" className="text-mounika hover:text-mounika/70 elegant-underline">Shop</a>
-          <a href="#contact" className="text-mounika hover:text-mounika/70 elegant-underline">Contact</a>
+          <a href="#home" className="text-mounika font-medium hover:text-mounika/70 elegant-underline tracking-wide">Home</a>
+          <a href="#about" className="text-mounika font-medium hover:text-mounika/70 elegant-underline tracking-wide">About</a>
+          <a href="#expertise" className="text-mounika font-medium hover:text-mounika/70 elegant-underline tracking-wide">Expertise</a>
+          <a href="#projects" className="text-mounika font-medium hover:text-mounika/70 elegant-underline tracking-wide">Projects</a>
+          <a href="#shop" className="text-mounika font-medium hover:text-mounika/70 elegant-underline tracking-wide">Shop</a>
+          <a href="#contact" className="text-mounika font-medium hover:text-mounika/70 elegant-underline tracking-wide">Contact</a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -54,46 +56,46 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="lg:hidden absolute top-full left-0 w-full bg-white shadow-md py-4 animate-fade-in">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white/95 backdrop-blur-sm shadow-md py-4 animate-fade-in">
           <div className="container mx-auto px-4 flex flex-col space-y-4">
             <a 
               href="#home" 
-              className="text-mounika py-2 hover:text-mounika/70"
+              className="text-mounika font-medium py-2 hover:text-mounika/70 border-b border-gray-100"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </a>
             <a 
               href="#about" 
-              className="text-mounika py-2 hover:text-mounika/70"
+              className="text-mounika font-medium py-2 hover:text-mounika/70 border-b border-gray-100"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </a>
             <a 
               href="#expertise" 
-              className="text-mounika py-2 hover:text-mounika/70"
+              className="text-mounika font-medium py-2 hover:text-mounika/70 border-b border-gray-100"
               onClick={() => setIsMenuOpen(false)}
             >
               Expertise
             </a>
             <a 
               href="#projects" 
-              className="text-mounika py-2 hover:text-mounika/70"
+              className="text-mounika font-medium py-2 hover:text-mounika/70 border-b border-gray-100"
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
             </a>
             <a 
               href="#shop" 
-              className="text-mounika py-2 hover:text-mounika/70"
+              className="text-mounika font-medium py-2 hover:text-mounika/70 border-b border-gray-100"
               onClick={() => setIsMenuOpen(false)}
             >
               Shop
             </a>
             <a 
               href="#contact" 
-              className="text-mounika py-2 hover:text-mounika/70"
+              className="text-mounika font-medium py-2 hover:text-mounika/70"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
