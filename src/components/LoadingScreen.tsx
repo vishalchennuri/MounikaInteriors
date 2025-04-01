@@ -5,4 +5,4 @@ const LoadingScreen = () => {
   return null; // Return null to effectively remove the loading screen
 };
 
-export default LoadingScreen;
+export default LoadingScreen
