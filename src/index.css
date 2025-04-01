@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Marcellus&display=swap');
 
 @tailwind base;
@@ -91,7 +92,7 @@
   
   .elegant-underline::after {
     content: '';
-    @apply absolute left-0 bottom-0 w-0 h-[1px] bg-mounika-DEFAULT transition-all duration-300 ease-in-out;
+    @apply absolute left-0 bottom-0 w-0 h-[1px] bg-[#1a1a1a] transition-all duration-300 ease-in-out;
   }
   
   .elegant-underline:hover::after {
@@ -99,11 +100,11 @@
   }
 
   .btn-mounika {
-    @apply px-6 py-3 bg-mounika-DEFAULT text-white border border-mounika-DEFAULT hover:bg-transparent hover:text-mounika-DEFAULT transition-all duration-300;
+    @apply px-6 py-3 bg-[#1a1a1a] text-white border border-[#1a1a1a] hover:bg-transparent hover:text-[#1a1a1a] transition-all duration-300;
   }
 
   .btn-outline-mounika {
-    @apply px-6 py-3 bg-transparent text-mounika-DEFAULT border border-mounika-DEFAULT hover:bg-mounika-DEFAULT hover:text-white transition-all duration-300;
+    @apply px-6 py-3 bg-transparent text-[#1a1a1a] border border-[#1a1a1a] hover:bg-[#1a1a1a] hover:text-white transition-all duration-300;
   }
   
   .expertise-card {
