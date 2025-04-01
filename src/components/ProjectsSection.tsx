@@ -7,10 +7,10 @@ const ProjectsSection = () => {
     <section id="projects" className="py-20 bg-monica-cream">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <h2 className="text-3xl md:text-4xl font-serif mb-3 uppercase">Our Signature Projects</h2>
+          <h2 className="text-3xl md:text-4xl font-serif mb-3">Our Signature Projects</h2>
         </ScrollReveal>
         <ScrollReveal delay={100}>
-          <p className="text-lg text-gray-600 mb-12 uppercase">Where elegance meets perfection</p>
+          <p className="text-lg text-gray-600 mb-12">Where elegance meets perfection</p>
         </ScrollReveal>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -29,7 +29,7 @@ const ProjectsSection = () => {
           </ScrollReveal>
           
           <ScrollReveal delay={400} className="lg:col-span-1">
-            <div className="relative h-[500px] overflow-hidden hover-zoom">
+            <div className="relative h-[400px] overflow-hidden hover-zoom">
               <img
                 src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?q=80&w=1974&auto=format&fit=crop"
                 alt="Signature Project"

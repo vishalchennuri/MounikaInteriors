@@ -1,6 +1,7 @@
 
 import React from 'react';
 import ScrollReveal from './ScrollReveal';
+import { cn } from '@/lib/utils';
 
 const products = [
   {
@@ -28,7 +29,7 @@ const ShopSection = () => {
     <section id="shop" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <ScrollReveal>
-          <h2 className="text-3xl md:text-4xl font-serif mb-3 uppercase">Designed For How You Live</h2>
+          <h2 className="text-3xl md:text-4xl font-serif mb-3">Designed For How You Live</h2>
         </ScrollReveal>
         <ScrollReveal delay={100}>
           <p className="text-lg text-gray-600 mb-12">Curated pieces that adapt to your rhythms, not the other way around</p>
@@ -47,7 +48,7 @@ const ShopSection = () => {
               </div>
             </div>
             <div className="lg:col-span-1 flex flex-col justify-center">
-              <h3 className="text-2xl font-serif mb-4 uppercase">Accent Chair with Character</h3>
+              <h3 className="text-2xl font-serif mb-4">Accent Chair with Character</h3>
               <p className="text-gray-600 mb-6">
                 A modern take on the classic lounge chair, featuring gentle curves and sturdy wooden legs. Perfect for reading corners or as a statement piece in any room.
               </p>
@@ -57,14 +58,14 @@ const ShopSection = () => {
               </div>
               <div className="flex justify-between items-center">
                 <span className="text-xl font-medium">$799</span>
-                <button className="btn-outline-monica uppercase">View Details</button>
+                <button className="btn-outline-monica">View Details</button>
               </div>
             </div>
           </div>
         </ScrollReveal>
         
         {/* Product Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product, index) => (
             <ScrollReveal key={index} delay={300 + index * 100} className="group">
               <div className="overflow-hidden rounded-sm mb-4">
@@ -74,7 +75,7 @@ const ShopSection = () => {
                   className="w-full h-80 object-cover transition-all duration-500 group-hover:scale-105"
                 />
               </div>
-              <h3 className="text-xl font-serif uppercase">{product.name}</h3>
+              <h3 className="text-xl font-serif">{product.name}</h3>
               <div className="flex justify-between mt-2">
                 <span className="text-gray-600">{product.color}</span>
                 <span className="font-medium">${product.price}</span>

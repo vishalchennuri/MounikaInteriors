@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between mb-12">
           <div className="mb-8 md:mb-0">
-            <h3 className="text-2xl font-serif mb-6 uppercase">
-              Monica<br />Interiors
+            <h3 className="text-2xl font-serif mb-6">
+              MONICA<br />INTERIORS
             </h3>
             <p className="max-w-xs text-white/70">
               Creating beautiful, functional spaces that inspire and nurture for over a decade.
@@ -18,7 +18,7 @@ const Footer = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h4 className="text-lg font-medium mb-4 uppercase">Location</h4>
+              <h4 className="text-lg font-medium mb-4">Location</h4>
               <p className="text-white/70">
                 123 Design Avenue<br />
                 Suite 500<br />
@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
             
             <div>
-              <h4 className="text-lg font-medium mb-4 uppercase">Contact</h4>
+              <h4 className="text-lg font-medium mb-4">Contact</h4>
               <p className="text-white/70">
                 (212) 555-7890<br />
                 info@monicainteriors.com
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
             
             <div>
-              <h4 className="text-lg font-medium mb-4 uppercase">Follow Us</h4>
+              <h4 className="text-lg font-medium mb-4">Follow Us</h4>
               <div className="flex space-x-4">
                 <a href="#" className="hover:text-monica-sage transition-colors duration-300">
                   <Instagram size={20} />

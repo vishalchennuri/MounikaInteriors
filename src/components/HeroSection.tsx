@@ -14,8 +14,8 @@ const HeroSection = () => {
       <div className="container mx-auto px-4 lg:px-20">
         <ScrollReveal>
           <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-serif mb-6 leading-tight text-shadow">
-            WHERE ELEGANCE <br />
-            <span className="italic font-light">MEETS</span> INTENTION
+            Where Elegance <br />
+            <span className="italic font-light">meets</span> Intention
           </h1>
         </ScrollReveal>
         
