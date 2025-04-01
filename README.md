@@ -1,73 +1,133 @@
-# Welcome to your Lovable project
 
-## Project info
+# Mounika Interiors - Interior Design Studio Website
 
-**URL**: https://lovable.dev/projects/1d49d485-7097-413c-bfe9-549cf3598988
+## Overview
+This is a modern, responsive website for Mounika Interiors, a fictional interior design studio. The site showcases the studio's expertise, projects, and services in an elegant and professional manner.
 
-## How can I edit this code?
+## Live Demo
+The site is hosted at [https://lovable.dev/projects/1d49d485-7097-413c-bfe9-549cf3598988](https://lovable.dev/projects/1d49d485-7097-413c-bfe9-549cf3598988)
 
-There are several ways of editing your application.
+## Website Sections
 
-**Use Lovable**
+### 1. Navigation
+- The navigation bar is fixed at the top of the page
+- It becomes solid and compact when scrolling down
+- Contains links to all main sections of the website
+- Responsive design with a mobile menu for smaller screens
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1d49d485-7097-413c-bfe9-549cf3598988) and start prompting.
+### 2. Hero Section
+- A large, visually appealing banner with a background image
+- Features the company's tagline "Where Elegance meets Intention"
+- Includes a call-to-action button to schedule a consultation
 
-Changes made via Lovable will be committed automatically to this repo.
+### 3. Expertise Section
+- Showcases the studio's four main service areas:
+  - Residential Design
+  - Furniture Selection
+  - Renovation & Styling
+  - Kitchen & Bath Design
+- Each service is presented with an image and short description
+- Cards feature a hover effect revealing the description text
 
-**Use your preferred IDE**
+### 4. Projects Section
+- Highlights the studio's signature projects
+- Includes descriptive text about the design philosophy
+- Features high-quality project images
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### 5. Shop Section
+- Displays furniture and decor items available for purchase
+- Features a main highlighted product
+- Includes a gallery of additional products with images, names, and prices
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 6. Testimonials Section
+- Customer reviews and testimonials
+- Each testimonial includes a customer photo, name, role, quote, and star rating
+- Clean, card-based layout with subtle hover effects
 
-Follow these steps:
+### 7. About Section
+- Explains the design philosophy of the studio
+- Details the approach to interior design
+- Combines informative text with relevant imagery
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### 8. Why Us Section
+- Lists five key reasons to choose Mounika Interiors
+- Each point is presented with a check icon
+- Features a supporting image
+- Uses a contrasting background color for visual impact
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 9. Contact Section
+- Includes a contact form with fields for name, email, subject, and message
+- Displays contact information with icons (address, phone, email)
+- Embeds a Google Maps location
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 10. Footer
+- Company branding
+- Location and contact details
+- Social media links
+- Copyright information and links to legal pages
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## Technical Implementation
 
-**Edit a file directly in GitHub**
+### Key Technologies
+- **React**: For building the user interface
+- **TypeScript**: For type-safe code
+- **Tailwind CSS**: For styling and responsive design
+- **React Router**: For page navigation
+- **Lucide React**: For icons
+- **Vite**: As the build tool and development server
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Main Components
+- **Navbar**: Navigation component that changes appearance on scroll
+- **HeroSection**: Main banner with background image and headline
+- **ExpertiseSection**: Grid layout of services with hover effects
+- **ProjectsSection**: Text and image layout showcasing projects
+- **ShopSection**: Product display with featured item and gallery
+- **TestimonialsSection**: Customer reviews in card format
+- **AboutSection**: Content and image layout explaining philosophy
+- **WhyUsSection**: List of reasons with check icons and image
+- **ContactSection**: Form and contact information layout
+- **Footer**: Site-wide footer with multiple columns of information
 
-**Use GitHub Codespaces**
+### Animations and Effects
+- **ScrollReveal**: Component for revealing elements as they enter the viewport
+- **Hover effects**: Interactive feedback for buttons and cards
+- **Smooth scrolling**: For anchor links to page sections
+- **Fade-in animations**: For smoother page loading experience
+- **Image zoom effects**: On certain images for visual interest
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
+- `src/components/`: Contains all React components
+- `src/pages/`: Page-level components
+- `src/index.css`: Global styles and Tailwind utility classes
+- `src/App.tsx`: Main application component
+- `src/main.tsx`: Entry point for the application
 
-## What technologies are used for this project?
+## Custom UI Elements
+- **Buttons**: Custom styled buttons with hover effects
+- **Cards**: Various card designs for different sections
+- **Underline effects**: Elegant animated underlines for navigation links
+- **Image hover effects**: Zoom and overlay effects for images
 
-This project is built with .
+## Getting Started with Development
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Prerequisites
+- Node.js and npm installed on your system
 
-## How can I deploy this project?
+### Installation
+1. Clone the repository
+2. Navigate to the project directory
+3. Run `npm install` to install dependencies
+4. Run `npm run dev` to start the development server
 
-Simply open [Lovable](https://lovable.dev/projects/1d49d485-7097-413c-bfe9-549cf3598988) and click on Share -> Publish.
+### Making Changes
+- Edit component files in `src/components/` to modify specific sections
+- Update styles in `src/index.css` for global style changes
+- Add new pages by creating files in `src/pages/` and adding routes in `App.tsx`
 
-## Can I connect a custom domain to my Lovable project?
+## Deployment
+The site can be deployed using the "Publish" option in Lovable or by following standard deployment procedures for React applications.
 
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Additional Notes
+- The website uses responsive design principles to work well on all device sizes
+- Custom animations improve user experience and engagement
+- The design emphasizes elegance and professionalism to match the brand identity
