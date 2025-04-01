@@ -4,12 +4,12 @@ import { Instagram, Facebook, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-monica text-white pt-16 pb-8">
+    <footer className="bg-mounika text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between mb-12">
           <div className="mb-8 md:mb-0">
             <h3 className="text-2xl font-serif mb-6">
-              MONICA<br />INTERIORS
+              MOUNIKA<br />INTERIORS
             </h3>
             <p className="max-w-xs text-white/70">
               Creating beautiful, functional spaces that inspire and nurture for over a decade.
@@ -30,20 +30,20 @@ const Footer = () => {
               <h4 className="text-lg font-medium mb-4">Contact</h4>
               <p className="text-white/70">
                 (212) 555-7890<br />
-                info@monicainteriors.com
+                info@mounikainteriors.com
               </p>
             </div>
             
             <div>
               <h4 className="text-lg font-medium mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <a href="#" className="hover:text-monica-sage transition-colors duration-300">
+                <a href="#" className="hover:text-mounika-sage transition-colors duration-300">
                   <Instagram size={20} />
                 </a>
-                <a href="#" className="hover:text-monica-sage transition-colors duration-300">
+                <a href="#" className="hover:text-mounika-sage transition-colors duration-300">
                   <Facebook size={20} />
                 </a>
-                <a href="#" className="hover:text-monica-sage transition-colors duration-300">
+                <a href="#" className="hover:text-mounika-sage transition-colors duration-300">
                   <Twitter size={20} />
                 </a>
               </div>
@@ -53,7 +53,7 @@ const Footer = () => {
         
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-white/70 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Monica Interiors. All rights reserved.
+            © {new Date().getFullYear()} Mounika Interiors. All rights reserved.
           </p>
           
           <div className="flex space-x-4 text-sm text-white/70">

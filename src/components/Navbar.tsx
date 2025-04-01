@@ -28,24 +28,24 @@ const Navbar = () => {
       <div className="container mx-auto px-4 lg:px-8 flex justify-between items-center">
         <a 
           href="#" 
-          className="text-monica text-xl font-serif font-medium hover-lift"
+          className="text-mounika text-xl font-serif font-medium hover-lift"
         >
-          MONICA<br />INTERIORS
+          MOUNIKA<br />INTERIORS
         </a>
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
-          <a href="#home" className="text-monica hover:text-monica/70 elegant-underline">Home</a>
-          <a href="#about" className="text-monica hover:text-monica/70 elegant-underline">About</a>
-          <a href="#expertise" className="text-monica hover:text-monica/70 elegant-underline">Expertise</a>
-          <a href="#projects" className="text-monica hover:text-monica/70 elegant-underline">Projects</a>
-          <a href="#shop" className="text-monica hover:text-monica/70 elegant-underline">Shop</a>
-          <a href="#contact" className="text-monica hover:text-monica/70 elegant-underline">Contact</a>
+          <a href="#home" className="text-mounika hover:text-mounika/70 elegant-underline">Home</a>
+          <a href="#about" className="text-mounika hover:text-mounika/70 elegant-underline">About</a>
+          <a href="#expertise" className="text-mounika hover:text-mounika/70 elegant-underline">Expertise</a>
+          <a href="#projects" className="text-mounika hover:text-mounika/70 elegant-underline">Projects</a>
+          <a href="#shop" className="text-mounika hover:text-mounika/70 elegant-underline">Shop</a>
+          <a href="#contact" className="text-mounika hover:text-mounika/70 elegant-underline">Contact</a>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-monica"
+          className="lg:hidden text-mounika"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -58,42 +58,42 @@ const Navbar = () => {
           <div className="container mx-auto px-4 flex flex-col space-y-4">
             <a 
               href="#home" 
-              className="text-monica py-2 hover:text-monica/70"
+              className="text-mounika py-2 hover:text-mounika/70"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
             </a>
             <a 
               href="#about" 
-              className="text-monica py-2 hover:text-monica/70"
+              className="text-mounika py-2 hover:text-mounika/70"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </a>
             <a 
               href="#expertise" 
-              className="text-monica py-2 hover:text-monica/70"
+              className="text-mounika py-2 hover:text-mounika/70"
               onClick={() => setIsMenuOpen(false)}
             >
               Expertise
             </a>
             <a 
               href="#projects" 
-              className="text-monica py-2 hover:text-monica/70"
+              className="text-mounika py-2 hover:text-mounika/70"
               onClick={() => setIsMenuOpen(false)}
             >
               Projects
             </a>
             <a 
               href="#shop" 
-              className="text-monica py-2 hover:text-monica/70"
+              className="text-mounika py-2 hover:text-mounika/70"
               onClick={() => setIsMenuOpen(false)}
             >
               Shop
             </a>
             <a 
               href="#contact" 
-              className="text-monica py-2 hover:text-monica/70"
+              className="text-mounika py-2 hover:text-mounika/70"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact

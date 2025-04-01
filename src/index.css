@@ -92,19 +92,19 @@
   
   .elegant-underline::after {
     content: '';
-    @apply absolute left-0 bottom-0 w-0 h-px bg-monica transition-all duration-300 ease-in-out;
+    @apply absolute left-0 bottom-0 w-0 h-px bg-mounika transition-all duration-300 ease-in-out;
   }
   
   .elegant-underline:hover::after {
     @apply w-full;
   }
 
-  .btn-monica {
-    @apply px-6 py-3 bg-monica text-white border border-monica hover:bg-transparent hover:text-monica transition-all duration-300;
+  .btn-mounika {
+    @apply px-6 py-3 bg-mounika text-white border border-mounika hover:bg-transparent hover:text-mounika transition-all duration-300;
   }
 
-  .btn-outline-monica {
-    @apply px-6 py-3 bg-transparent text-monica border border-monica hover:bg-monica hover:text-white transition-all duration-300;
+  .btn-outline-mounika {
+    @apply px-6 py-3 bg-transparent text-mounika border border-mounika hover:bg-mounika hover:text-white transition-all duration-300;
   }
   
   .expertise-card {

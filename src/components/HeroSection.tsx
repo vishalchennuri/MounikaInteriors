@@ -28,7 +28,7 @@ const HeroSection = () => {
         <ScrollReveal delay={400}>
           <a
             href="#contact"
-            className="btn-monica inline-block"
+            className="btn-mounika inline-block"
           >
             Schedule a Consultation
           </a>

@@ -13,13 +13,13 @@ const reasons = [
 
 const WhyUsSection = () => {
   return (
-    <section id="why-us" className="py-20 bg-monica">
+    <section id="why-us" className="py-20 bg-mounika">
       <div className="container mx-auto px-4">
         <ScrollReveal>
           <h2 className="text-white text-3xl md:text-4xl font-serif mb-3">Why Choose Us?</h2>
         </ScrollReveal>
         <ScrollReveal delay={100}>
-          <p className="text-white/80 text-lg mb-12">What sets Monica Interiors apart from the rest</p>
+          <p className="text-white/80 text-lg mb-12">What sets Mounika Interiors apart from the rest</p>
         </ScrollReveal>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
