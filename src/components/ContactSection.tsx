@@ -1,7 +1,6 @@
-
-import React from 'react';
-import ScrollReveal from './ScrollReveal';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import React from "react";
+import ScrollReveal from "./ScrollReveal";
+import { MapPin, Phone, Mail } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -16,13 +15,18 @@ const ContactSection = () => {
         <ScrollReveal delay={100}>
           <p className="text-center text-lg text-gray-600 mb-12">CONTACT US!</p>
         </ScrollReveal>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <ScrollReveal delay={200} className="lg:col-span-1">
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Name
+                  </label>
                   <input
                     type="text"
                     id="name"
@@ -31,7 +35,12 @@ const ContactSection = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Email
+                  </label>
                   <input
                     type="email"
                     id="email"
@@ -40,9 +49,14 @@ const ContactSection = () => {
                   />
                 </div>
               </div>
-              
+
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject</label>
+                <label
+                  htmlFor="subject"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Subject
+                </label>
                 <input
                   type="text"
                   id="subject"
@@ -50,9 +64,14 @@ const ContactSection = () => {
                   placeholder="How can we help?"
                 />
               </div>
-              
+
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Message
+                </label>
                 <textarea
                   id="message"
                   rows={5}
@@ -60,38 +79,46 @@ const ContactSection = () => {
                   placeholder="Tell us about your project..."
                 ></textarea>
               </div>
-              
+
               <div>
                 <button
                   type="submit"
-                  className="btn-monica w-full md:w-auto"
+                  className="w-full md:w-auto px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-800 transition duration-300"
                 >
                   Send Message
                 </button>
               </div>
             </form>
           </ScrollReveal>
-          
-          <ScrollReveal delay={400} className="lg:col-span-1 flex flex-col space-y-8">
+
+          <ScrollReveal
+            delay={400}
+            className="lg:col-span-1 flex flex-col space-y-8"
+          >
             <div>
               <h3 className="text-xl font-serif mb-4">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <MapPin className="mr-4 text-monica" size={20} />
-                  <p>123 Design Avenue, Suite 500<br />New York, NY 10001</p>
+                  <p>
+                    Beeramguda
+                    <br />
+                    Hyderabad, India
+                  </p>
                 </div>
                 <div className="flex items-center">
                   <Phone className="mr-4 text-monica" size={20} />
-                  <p>(212) 555-7890</p>
+                  <p>+91 9885185978 ,</p>
+                  <p> +91 7730085978</p>
                 </div>
                 <div className="flex items-center">
                   <Mail className="mr-4 text-monica" size={20} />
-                  <p>info@monicainteriors.com</p>
+                  <p>info@monicainteriors.in</p>
                 </div>
               </div>
             </div>
-            
-            <div className="h-[300px] bg-gray-200 rounded-sm overflow-hidden">
+
+            {/* <div className="h-[300px] bg-gray-200 rounded-sm overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976373946229!3d40.69766374934879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1621521369895!5m2!1sen!2sca"
                 width="100%"
@@ -101,7 +128,7 @@ const ContactSection = () => {
                 loading="lazy"
                 title="Monica Interiors Location"
               ></iframe>
-            </div>
+            </div> */}
           </ScrollReveal>
         </div>
       </div>
