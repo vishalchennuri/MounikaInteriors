@@ -4,8 +4,6 @@
 ## Overview
 This is a modern, responsive website for Mounika Interiors, a fictional interior design studio. The site showcases the studio's expertise, projects, and services in an elegant and professional manner.
 
-## Live Demo
-The site is hosted at [https://lovable.dev/projects/1d49d485-7097-413c-bfe9-549cf3598988](https://lovable.dev/projects/1d49d485-7097-413c-bfe9-549cf3598988)
 
 ## Website Sections
 
