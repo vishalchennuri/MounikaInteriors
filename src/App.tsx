@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoadingScreen from "./components/LoadingScreen";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import FloatingContactButtons from './components/ContactButtons';
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const App = () => (
       <LoadingScreen />
       <Toaster />
       <Sonner />
+      <FloatingContactButtons />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
