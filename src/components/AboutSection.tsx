@@ -6,6 +6,9 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-4">
+      <ScrollReveal>
+          <h2 className="text-center text-3xl md:text-4xl font-serif mb-10">About Us</h2>
+        </ScrollReveal>
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-serif mb-3">Why Thoughtful Design Matters</h2>
         </ScrollReveal>

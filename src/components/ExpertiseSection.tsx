@@ -3,28 +3,45 @@ import React from 'react';
 import ScrollReveal from './ScrollReveal';
 import { cn } from '@/lib/utils';
 
-const expertiseCards = [
+const expertiseCards =[
   {
-    title: "Residential Design",
-    description: "Creating beautiful spaces for everyday living",
+    title: "Hidden Furniture (Cupboards)",
+    description: "Seamlessly designed storage solutions that blend into your interiors",
     image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1932&auto=format&fit=crop"
   },
   {
-    title: "Furniture Selection",
-    description: "Curating the perfect pieces for your lifestyle",
+    title: "Painting and Polishing",
+    description: "Premium finishes that breathe new life into your walls and woodwork",
     image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop"
   },
   {
-    title: "Renovation & Styling",
-    description: "Transforming existing spaces into something new",
+    title: "False Ceiling",
+    description: "Modern ceiling designs that elevate your space with style and lighting",
     image: "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=2080&auto=format&fit=crop"
   },
   {
-    title: "Kitchen & Bath Design",
-    description: "Functional yet stylish spaces for everyday use",
+    title: "Modular Kitchen Installation",
+    description: "Efficient and elegant kitchen setups tailored to your lifestyle",
     image: "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    title: "Luxury, High-End Interior Styling",
+    description: "Sophisticated aesthetics and premium materials for a lavish living experience",
+    image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=1932&auto=format&fit=crop"
+  },
+  {
+    title: "Art and Decor (Your Customization)",
+    description: "Unique decorative elements that reflect your personal style",
+    image: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop"
+  },
+  {
+    title: "False Ceiling",
+    description: "Modern ceiling designs that elevate your space with style and lighting",
+    image: "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=2080&auto=format&fit=crop"
   }
-];
+]
+
+
 
 const ExpertiseSection = () => {
   return (

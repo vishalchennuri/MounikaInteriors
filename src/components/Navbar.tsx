@@ -37,7 +37,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
-          {["Home", "About", "Expertise", "Projects", "Shop", "Contact"].map((item) => (
+          {["Home", "Expertise","About",  "Projects", "Contact"].map((item) => (
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
