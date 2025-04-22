@@ -1,8 +1,29 @@
 import React from "react";
 import ScrollReveal from "./ScrollReveal";
 import { MapPin, Phone, Mail } from "lucide-react";
+import { useState } from "react";
 
 const ContactSection = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    subject: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.id]: e.target.value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { name, phone, subject, message } = formData;
+    const whatsappMessage = `Name: ${name}%0APhone: ${phone}%0ASubject: ${subject}%0AMessage: ${message}`;
+
+    window.open(`https://wa.me/919885185978?text=${whatsappMessage}`, "_blank");
+  };
+
+
   return (
     <section id="contact" className="py-20 bg-monica-cream">
       <div className="container mx-auto px-4">
@@ -18,7 +39,7 @@ const ContactSection = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <ScrollReveal delay={200} className="lg:col-span-1">
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label
@@ -30,22 +51,28 @@ const ContactSection = () => {
                   <input
                     type="text"
                     id="name"
+                    value={formData.name}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-1 focus:ring-monica focus:border-monica transition-all duration-200"
                     placeholder="Your name"
+                    required
                   />
                 </div>
                 <div>
                   <label
-                    htmlFor="email"
+                    htmlFor="phone"
                     className="block text-sm font-medium text-gray-700 mb-1"
                   >
-                    Email
+                    Phone
                   </label>
                   <input
-                    type="email"
-                    id="email"
+                    type="tel"
+                    id="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-1 focus:ring-monica focus:border-monica transition-all duration-200"
-                    placeholder="Your email"
+                    placeholder="Your phone number"
+                    required
                   />
                 </div>
               </div>
@@ -60,8 +87,11 @@ const ContactSection = () => {
                 <input
                   type="text"
                   id="subject"
+                  value={formData.subject}
+                  onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-1 focus:ring-monica focus:border-monica transition-all duration-200"
                   placeholder="How can we help?"
+                  required
                 />
               </div>
 
@@ -74,9 +104,12 @@ const ContactSection = () => {
                 </label>
                 <textarea
                   id="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   rows={5}
                   className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-1 focus:ring-monica focus:border-monica transition-all duration-200"
                   placeholder="Tell us about your project..."
+                  required
                 ></textarea>
               </div>
 
@@ -101,7 +134,7 @@ const ContactSection = () => {
                 <div className="flex items-start">
                   <MapPin className="mr-4 text-monica" size={20} />
                   <p>
-                    Beeramguda
+                    Chandanagar
                     <br />
                     Hyderabad, India
                   </p>
@@ -113,22 +146,10 @@ const ContactSection = () => {
                 </div>
                 <div className="flex items-center">
                   <Mail className="mr-4 text-monica" size={20} />
-                  <p>info@monicainteriors.in</p>
+                  <p>mounikainteriors5978@gmail.com</p>
                 </div>
               </div>
             </div>
-
-            {/* <div className="h-[300px] bg-gray-200 rounded-sm overflow-hidden">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976373946229!3d40.69766374934879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1621521369895!5m2!1sen!2sca"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                title="Monica Interiors Location"
-              ></iframe>
-            </div> */}
           </ScrollReveal>
         </div>
       </div>

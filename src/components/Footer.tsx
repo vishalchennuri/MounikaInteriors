@@ -36,7 +36,7 @@ const Footer = () => {
                 <br />
                 +91 7730085978
                 <br />
-                info@mounikainteriors.com
+                mounikainteriors5978@gmail.com
               </p>
             </div>
 
@@ -44,8 +44,10 @@ const Footer = () => {
               <h4 className="text-lg font-medium mb-4">Follow Us</h4>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/mounika_interiors"
                   className="hover:text-mounika-sage transition-colors duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Instagram size={20} />
                 </a>
