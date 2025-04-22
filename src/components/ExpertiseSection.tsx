@@ -1,9 +1,8 @@
-
 import React from 'react';
 import ScrollReveal from './ScrollReveal';
 import { cn } from '@/lib/utils';
 
-const expertiseCards =[
+const expertiseCards = [
   {
     title: "Hidden Furniture (Cupboards)",
     description: "Seamlessly designed storage solutions that blend into your interiors",
@@ -39,13 +38,14 @@ const expertiseCards =[
     description: "Modern ceiling designs that elevate your space with style and lighting",
     image: "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=2080&auto=format&fit=crop"
   }
-]
+];
 
-
+// Duplicate cards for seamless infinite scrolling
+const tickerCards = [...expertiseCards, ...expertiseCards];
 
 const ExpertiseSection = () => {
   return (
-    <section id="expertise" className="py-20 bg-white">
+    <section id="expertise" className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <ScrollReveal>
           <h2 className="text-center text-3xl md:text-4xl font-serif mb-3">Our Expertise</h2>
@@ -53,26 +53,29 @@ const ExpertiseSection = () => {
         <ScrollReveal delay={100}>
           <p className="text-center text-lg text-gray-600 mb-12">Transforming Spaces, Enhancing Lives</p>
         </ScrollReveal>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {expertiseCards.map((card, index) => (
-            <ScrollReveal 
-              key={index} 
-              delay={200 + index * 100}
-              className="expertise-card h-80"
+
+        <div className="relative w-full overflow-hidden group">
+          <div className="flex w-max animate-marquee gap-6">
+            {tickerCards.map((card, index) => (
+              <div
+              key={index}
+              className="min-w-[300px] max-w-[300px] h-80 relative overflow-hidden rounded-xl shadow-md transform transition-transform duration-500 hover:scale-105"
             >
               <img
                 src={card.image}
                 alt={card.title}
                 className="w-full h-full object-cover"
               />
-              <div className="expertise-card-content">
+              <div className="absolute inset-0 bg-black bg-opacity-30 p-4 flex flex-col justify-end">
                 <h3 className="text-white text-xl font-serif mb-2">{card.title}</h3>
                 <p className="text-white/90 text-sm">{card.description}</p>
               </div>
-            </ScrollReveal>
-          ))}
+            </div>
+            
+            ))}
+          </div>
         </div>
+
       </div>
     </section>
   );
