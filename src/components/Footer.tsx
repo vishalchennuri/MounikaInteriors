@@ -22,7 +22,7 @@ const Footer = () => {
             <div>
               <h4 className="text-lg font-medium mb-4">Location</h4>
               <p className="text-white/70">
-                Beeramguda
+                ChandhaNagar
                 <br />
                 Hyderabad, India
                 <br />
