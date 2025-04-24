@@ -16,7 +16,7 @@ const ProjectsSection = () => {
       type: 'video',
       media: 'https://res.cloudinary.com/djyny0qqn/video/upload/v1745303618/WhatsApp_Video_2025-04-21_at_23.31.44_660bcf1a_hsesjr.mp4',
       title: 'Storage Solutions at Nile Valley',
-      location: 'Miyapur',
+      location: 'Miyapur, Hyderabad',
       description: 'In this recently completed project at Nile Valley, Miyapur, we transformed storage into a seamless part of the interior design. From built-in cupboards to fully concealed storage systems, every element was crafted to blend perfectly with the space—delivering smart, stylish functionality without compromising on aesthetics.',
       testimonial: '"The hidden cupboards were a game changer—perfectly fitted and beautifully done. You\'d never guess there\'s storage behind those panels! Clean finish, flawless integration."',
       partner: 'Selman\'s',
@@ -31,7 +31,7 @@ const ProjectsSection = () => {
       type: 'image',
       media: 'https://res.cloudinary.com/djyny0qqn/image/upload/v1745303843/WhatsApp_Image_2025-04-22_at_11.42.05_fc203c00_e5rf4k.jpg',
       title: 'Modular Kitchen Design',
-      location: 'Chandhanagar',
+      location: 'Chandhanagar, Hyderabad',
       description: 'We recently completed a transformative modular kitchen project in Chandhanagar that perfectly embodies our belief that kitchens should be as beautiful as they are functional. For our client Ramesh, we crafted a modular kitchen design that seamlessly blends with the existing interior style of his home.',
       testimonial: '"My kitchen is now the heart of our home in a way it never was before. The functionality is perfect for how we cook and entertain, and the design is simply stunning. Monica\'s team thought of everything."',
       features: [
@@ -45,7 +45,7 @@ const ProjectsSection = () => {
       type: 'image',
       media: 'https://res.cloudinary.com/djyny0qqn/image/upload/v1745303639/WhatsApp_Image_2025-04-22_at_11.14.20_294c2409_zepfyy.jpg',
       title: 'Interior Transformation',
-      location: 'BHEL Place',
+      location: 'BHEL, Hyderabad',
       description: 'We recently completed a stunning interior transformation at BHEL Place that exemplifies our philosophy: interiors that don\'t just look beautiful—they feel intentional. This project perfectly blended comfort, function, and aesthetic sophistication through discreet storage solutions and artistic flourishes.',
       testimonial: '"What Monica Interiors achieved was beyond our expectations. They didn\'t just redesign our space—they transformed how we live in it. Every detail feels thoughtful and purposeful."',
       services: [
@@ -57,7 +57,7 @@ const ProjectsSection = () => {
       type: 'image',
       media: 'https://res.cloudinary.com/djyny0qqn/image/upload/v1745303737/WhatsApp_Image_2025-04-22_at_12.05.30_5c193e0a_c1cwhv.jpg',
       title: 'Personalized Interior Design',
-      location: 'Nile Valley Block 7',
+      location: 'Nile Valley Block 7, Miyapur, Hyderabad',
       description: 'We recently completed a stunning interior transformation at Nile Valley Block 7 that exemplifies our personalized approach to design. The space now beautifully reflects our client\'s unique personality and lifestyle through our deeply personalized Art & Decor service.',
       testimonial: '"Working with Monica Interiors was a revelation. They listened intently to understand my personal style, then enhanced it in ways I couldn\'t have imagined. My home now feels authentically mine, but elevated."',
       features: [
@@ -73,7 +73,7 @@ const ProjectsSection = () => {
       type: 'image',
       media: 'https://res.cloudinary.com/djyny0qqn/image/upload/v1745303913/WhatsApp_Image_2025-04-22_at_11.55.52_554dd822_oo5ox7.jpg',
       title: 'False Ceiling Installation',
-      location: 'Miyapur Madinaguda',
+      location: 'Miyapur Madinaguda, Hyderabad',
       description: 'We recently completed a stunning false ceiling installation at Saadir Shan\'s residence in Miyapur Madinaguda that transformed ordinary spaces into extraordinary ones. For this project, we elevated the often-overlooked ceiling into a defining architectural feature.',
       testimonial: '"I never knew ceiling design could make such a dramatic difference. The lighting integration and layered design completely transformed our living areas. Guests always look up in awe when they visit now."',
       features: [
@@ -269,7 +269,13 @@ const ProjectsSection = () => {
                               muted
                               loop
                               playsInline
-                              controls={false}
+                              controls={true}
+                              controlsList="nodownload"
+                              onVolumeChange={(e) => {
+                                // Keep video permanently muted regardless of user action
+                                const video = e.target as HTMLVideoElement;
+                                video.muted = true;
+                              }}
                             />
                           ) : (
                             <img
@@ -282,8 +288,7 @@ const ProjectsSection = () => {
                       </div>
                     </div>
                   </div>
-                ))}
-              </div>
+                ))}              </div>
             </div>
           </div>
           

@@ -7,22 +7,22 @@ const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
-    subject: "",
+    Service: "",
     message: "",
   });
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   };
+  
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { name, phone, subject, message } = formData;
-    const whatsappMessage = `Name: ${name}%0APhone: ${phone}%0ASubject: ${subject}%0AMessage: ${message}`;
+    const { name, phone, Service, message } = formData;
+    const whatsappMessage = `Name: ${name}%0APhone: ${phone}%0ASubject: ${Service}%0AMessage: ${message}`;
 
     window.open(`https://wa.me/919885185978?text=${whatsappMessage}`, "_blank");
   };
-
 
   return (
     <section id="contact" className="py-20 bg-monica-cream">
@@ -79,15 +79,15 @@ const ContactSection = () => {
 
               <div>
                 <label
-                  htmlFor="subject"
+                  htmlFor="Service"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Subject
+                  Service
                 </label>
                 <input
                   type="text"
-                  id="subject"
-                  value={formData.subject}
+                  id="Service"
+                  value={formData.Service}
                   onChange={handleChange}
                   className="w-full px-4 py-3 border border-gray-300 rounded-sm focus:outline-none focus:ring-1 focus:ring-monica focus:border-monica transition-all duration-200"
                   placeholder="How can we help?"
@@ -148,6 +148,22 @@ const ContactSection = () => {
                   <Mail className="mr-4 text-monica" size={20} />
                   <p>mounikainteriors5978@gmail.com</p>
                 </div>
+              </div>
+            </div>
+            
+            {/* Google Maps iframe */}
+            <div className="mt-6">
+              <h3 className="text-xl font-serif mb-4">Find Us</h3>
+              <div className="w-full h-64 rounded-lg overflow-hidden shadow-md">
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3804.9829507753893!2d78.33380487516771!3d17.508327283399645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDMwJzMwLjAiTiA3OMKwMjAnMTEuMCJF!5e0!3m2!1sen!2sin!4v1745462474077!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="100%" 
+                  style={{ border: 0 }} 
+                  loading="lazy" 
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Google Maps Location"
+                ></iframe>
               </div>
             </div>
           </ScrollReveal>
