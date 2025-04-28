@@ -69,11 +69,23 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/70 text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Mounika Interiors. All rights reserved.
-          </p>
+          <div className="flex flex-col md:flex-row items-center">
+            <p className="text-white/70 text-sm mb-2 md:mb-0 md:mr-4">
+              © {new Date().getFullYear()} Mounika Interiors. All rights reserved.
+            </p>
+            <p className="text-white/70 text-sm">
+              Made by <a 
+                href="https://techmocha.in" 
+                className="text-mounika-sage hover:underline transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Techmocha
+              </a>
+            </p>
+          </div>
 
-          <div className="flex space-x-4 text-sm text-white/70">
+          <div className="flex space-x-4 text-sm text-white/70 mt-4 md:mt-0">
             <a
               href="#"
               className="hover:text-white transition-colors duration-300"

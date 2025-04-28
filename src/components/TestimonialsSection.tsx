@@ -229,8 +229,8 @@ const TestimonialsSection = () => {
             </button>
           </div>
 
-          {/* Desktop navigation buttons (bottom) */}
-          <div className="flex justify-center mt-10 space-x-6">
+          {/* Desktop navigation buttons (bottom) - Now hidden on mobile */}
+          <div className="hidden md:flex justify-center mt-10 space-x-6">
             <button
               onClick={prevSlide}
               className="bg-white p-4 rounded-full shadow-md hover:shadow-lg hover:bg-gray-100 transition-all duration-300 flex items-center justify-center"
